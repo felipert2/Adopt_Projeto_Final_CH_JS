@@ -9,3 +9,7 @@
 .header_superior{
     display: flex;
 }
+
+.header_inferior{
+    display: flex;
+}
