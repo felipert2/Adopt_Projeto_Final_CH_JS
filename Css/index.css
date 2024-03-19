@@ -1,9 +1,27 @@
+@import url("./header.css");
+
 *{
     margin: 0;
     padding: 0;
     
 }
 
-.cabecalho{
-    background-color: #86CFCF;
+
+
+.grid{
+
+    margin: 0 5%;      
+    display: grid;
+    grid-template-columns:1fr 10fr 1fr;    
+    grid-template-areas:
+    "cabecalho cabecalho cabecalho "    
+    "carrosel carrossel carrossel"   
+    "carrosel carrossel carrossel" 
+    "apadrinhar apadrinhar apadrinhar"  
+    "apadrinhar apadrinhar apadrinhar"  
+    "depoimentos depoimentos  depoimentos"
+    "depoimentos depoimentos  depoimentos"
+   "rodape   rodape   rodape" 
+    "rodape   rodape   rodape" ;
 }
+
