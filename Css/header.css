@@ -1,15 +1,63 @@
-
-
-
+:root {
+    --laranja: #F58440;
+    --laranja-claro:#fac3a1;
+    --azul-claro: #d8efef;
+    --azul: #0CC1C2;
+    --font-preto: #606060;
+  
+  }
+  
 .cabecalho{
     grid-area: cabecalho;
-    background-color: #86CFCF;
+    background-color: var(--azul-claro);
 }
 
 .header_superior{
     display: flex;
 }
 
+
+.imagem__cabecalho{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.links_header_container{
+justify-content: center;
+align-items: center;
+padding: 4em 1em 1em 11em;
+
+}
+
+.links__header{
+padding: 1em 1em 1em 1em;
+text-transform: uppercase;
+font-weight: 700;
+color: var(--font-preto);
+font-size: 1.5rem;
+text-decoration: none;
+
+}
+
+.header_title{
+    color: var(--azul);
+    font-weight: bold;
+    font-size:4rem ;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
 .header_inferior{
     display: flex;
+}
+
+header button{
+    background-color: var(--laranja);
+
 }
