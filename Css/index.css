@@ -35,5 +35,49 @@ body{
 
 .apadrinhar{
     grid-area: apadrinhar;
-   
+    
+    text-align: center;    
+    height: 600px;   
+}
+
+.apadrinhar .tituloApadrinhar{
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    color: #606060;
+}
+
+.apadrinhar .apandrinhar_doacao{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 100px;
+    padding-top: 50px;
+    width: 845px;
+    height: 307px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 2px #c6c6c6;
+    background-color: #fff;
+}
+
+.formInfo {
+    margin-left: 20px;
+}
+
+.formInfo label {
+    display: block;    
+    color: #F58440;
+    font-size: 24px;
+    text-align: left;
+  
+}
+
+.formInfo input {
+    background-color: #F6F5F5;    
+    color: #606060;
+    width: 380px;
+    height: 35px;
+    border: none;
+    
+    
 }
