@@ -1,6 +1,4 @@
 @import url("./header.css");
-@import url("../Css/Carrossel.css");
-@import url("./card.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 *{
@@ -21,8 +19,6 @@
     grid-template-columns:1fr 10fr 1fr;    
     grid-template-areas:
     "cabecalho cabecalho cabecalho "    
-    "carrossel carrossel carrossel"   
-    "carrossel carrossel carrossel" 
     "apadrinhar apadrinhar apadrinhar"  
     "apadrinhar apadrinhar apadrinhar"  
     "depoimentos depoimentos  depoimentos"
