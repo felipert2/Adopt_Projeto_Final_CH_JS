@@ -10,7 +10,7 @@ document.getElementById("btnSomar").addEventListener("click", function() {
         total += valor;
 
         // Exibe o total acumulado
-        document.getElementById("resultado").innerText = "Com a sua ajuda, já foi arrecadado: " + total;
+        document.getElementById("resultado").innerText =  "R$" + total;
     } else {
         alert("Por favor, insira um valor numérico válido.");
     }
