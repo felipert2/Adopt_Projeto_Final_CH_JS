@@ -1,16 +1,18 @@
 :root {
     --laranja: #F58440;
-    --laranja-claro:#fac3a1;
-    --azul-claro: #d8efef;
+    --laranja-claro:#fac3a1;    
     --azul: #0CC1C2;
     --font-preto: #606060;
     --branco: #FFFFFF;
+    --azul-claro:rgba(216, 239, 239,2)
   
   }
   
 .cabecalho{
     grid-area: cabecalho;
     background-color: var(--azul-claro);
+ 
+  
 }
 
 .header_superior{
@@ -73,11 +75,11 @@ text-decoration: none;
 
 header button{
     background-color: var(--laranja);
-    margin:  0em 0em 1em 10em;
+    margin:  0em 0em 0em 10em;
     border-radius: 10px;
     color: var(--branco);
     width: 250px;
-    padding: 0,6em 0;
+    padding: 0.6sem 0;
     border-color: var(--laranja);
 
 }
@@ -86,7 +88,7 @@ header button{
     max-width:780px;
     max-height:350px;
     width: auto;
-    height: auto;
-    
+    height: 100%;
+   
    
 }
