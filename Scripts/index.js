@@ -21,6 +21,7 @@ document.getElementById("btnSomar").addEventListener("click", function() {
 */
 
 // ABAIXO FIZ O DESAFIO COMPLEMENTAR DA ENTREGA DO DIA 27/03 
+// com operador ternário, desestruturação e alguns ajustes 
 
 let total = 0;
 

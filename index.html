@@ -55,16 +55,20 @@
       <h2 class="tituloApadrinhar">COMO VOCÊ PODE AJUDAR</h2>
       <div class="apandrinhar_doacao">
         <div class="formInfo">
-          <label for="inputNome"> Nome no cartão</label>
+          <label for="inputNome">Nome no cartão</label>
           <input type="name" id="" name="inputNome">
-          <label for="inputNumero"> Número no cartão</label>
-          <input type="number" id="" name="inputNumero">
+          <label for="inputNumero">Número no cartão</label>
+          <input type="text" id="" name="inputNumero" placeholder="0000 0000 0000 0000">
+          <label for="inputData">Data de vencimento</label>
+          <input type="text" id="" name="inputData" placeholder="MM/AA">
+          <label for="inputCVC">CVC</label>
+          <input type="text" id="" name="inputCVC" placeholder="XXX">
         </div>
 
 
         <div>
           <form>
-            <label for="inputValor"> Você está doando:</label>
+            <label for="inputValor">Você está doando:</label>
             <input type="number" id="inputValor" name="inputValor">
             <button type="button" id="btnSomar">DOAR</button>
           </form>
@@ -75,8 +79,11 @@
     <section class="arrecadado">
       <h2>COM A SUA AJUDA JÁ FOI ARRECADADO:</h2>
       <div id="resultado"></div>
+      <br>
       <p>Apoiadores</p>
-      <h3>125 pessoas</h3>
+      <!--aqui temos que colocar a contabilização de pessoas que já doaram depois-->
+      <div id="resultadoPessoas"></div>
+      <h3>00 pessoas</h3>
 
     </section>
 
