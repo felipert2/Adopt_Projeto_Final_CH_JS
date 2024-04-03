@@ -7,6 +7,16 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+
+.logo {
+    max-width: 450px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+
 .footer {
     text-align: center;
     display: flex;
