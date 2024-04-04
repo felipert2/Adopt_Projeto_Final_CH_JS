@@ -147,10 +147,41 @@ body {
 }
 
 .footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
   background-color: #D8EFEF;
-  padding: 20px;
+  padding: 0px;
+  font-size: 15px;
+  color: #606060;
+
+}
+
+.contatoFooter {
+  padding: 15px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.contatoFooter input[type="name"],
+.contatoFooter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contatoFooter input[type="submit"] {
+  background-color: #80cc83;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contatoFooter input[type="submit"]:hover {
+  background-color: #45a049;
+  /* cor de fundo do botão ao passar o mouse */
 }
