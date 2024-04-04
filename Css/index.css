@@ -2,52 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0;   
+    padding: 0;
     font-family: "Poppins", sans-serif;
     /* teste */
-    
-   
-    
+
+
+
 }
 
-body{
+body {
     background-image: url("../Assets/Rectangle10.png");
 }
 
-.grid{
+.grid {
 
-    margin: 0 5%;      
+    margin: 0 5%;
     display: grid;
-  
-    grid-template-columns:1fr 10fr 1fr;    
+
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-areas:
-    "cabecalho cabecalho cabecalho "    
-    "apadrinhar apadrinhar apadrinhar"  
-    "apadrinhar apadrinhar apadrinhar"  
-    "depoimentos depoimentos  depoimentos"
-    "depoimentos depoimentos  depoimentos"
-    "rodape   rodape   rodape" 
-    "rodape   rodape   rodape" ;
+        "cabecalho cabecalho cabecalho "
+        "apadrinhar apadrinhar apadrinhar"
+        "apadrinhar apadrinhar apadrinhar"
+        "depoimentos depoimentos  depoimentos"
+        "depoimentos depoimentos  depoimentos"
+        "rodape   rodape   rodape"
+        "rodape   rodape   rodape";
 }
 
 
 
-.apadrinhar{
-    grid-area: apadrinhar;    
-    text-align: center;    
-    height: 600px;   
+.apadrinhar {
+    grid-area: apadrinhar;
+    text-align: center;
+    height: 600px;
 }
 
-.apadrinhar .tituloApadrinhar{
+.apadrinhar .tituloApadrinhar {
     margin-top: 50px;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #606060;
 }
 
-.apadrinhar .apandrinhar_doacao{
+.apadrinhar .apandrinhar_doacao {
     display: flex;
     margin-left: 40%;
     margin-top: 100px;
@@ -65,26 +65,26 @@ body{
 }
 
 .formInfo label {
-    display: block;    
+    display: block;
     color: #F58440;
     font-size: 24px;
     text-align: left;
-  
+
 }
 
 .formInfo input {
-    background-color: #F6F5F5;    
+    background-color: #F6F5F5;
     color: #606060;
     width: 380px;
     height: 35px;
     border: none;
-    
-    
+
+
 }
 
-.arrecadado{
+.arrecadado {
     grid-area: depoimentos;
-    text-align: center;    
+    text-align: center;
     margin: auto;
     padding-top: 50px;
     margin-top: 100px;
@@ -95,24 +95,34 @@ body{
     box-shadow: 0px 0px 10px 2px #c6c6c6;
     color: #F58440;
     font-size: 15px;
-    font-weight: 600;   
-    
+    font-weight: 600;
+
 }
 
-.arrecadado div{
+.arrecadado div {
     margin-top: 30px;
     color: #606060;
     font-size: 30px;
     font-weight: 600;
 }
 
-.arrecadado p{
+.arrecadado p {
     font-size: 15px;
     font-weight: 100;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.arrecadado h3{ 
+.arrecadado h3 {
     color: #606060;
+}
+
+
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #D8EFEF;
+    padding: 0px;
 }
