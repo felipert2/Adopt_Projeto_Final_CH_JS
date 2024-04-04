@@ -90,14 +90,16 @@ body {
     grid-area: depoimentos;
     text-align: center;
     margin: auto;
-    padding-top: 50px;
-    margin-top: 100px;
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
     background-color: #f5854034;
     width: 640px;
     height: 250px;
     border-radius: 50px;
     box-shadow: 0px 0px 10px 2px #c6c6c6;
-    color: #F58440;
+    color: #f58440;
     font-size: 15px;
     font-weight: 600;
     max-width: 100%;
@@ -112,15 +114,21 @@ body {
 }
 
 .arrecadado p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 100;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.arrecadado h2 {
+    font-size: 24px;
 }
 
 .arrecadado h3 {
     color: #606060;
+    font-size: 20px;
 }
+
 
 
 
