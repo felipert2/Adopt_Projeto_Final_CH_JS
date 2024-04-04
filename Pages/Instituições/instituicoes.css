@@ -9,6 +9,7 @@
   --branco: #ffffff;
   --azul-claro: rgba(216, 239, 239, 2);
 }
+
 * {
   box-sizing: border-box;
   padding-top: 0px;
@@ -20,18 +21,65 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   height: 100vh; */
+=======
+  height: 100vh;
+  background-image: url("../Assets/Rectangle10.png");
+>>>>>>> 4301fb6b98fe34918e65d2b96d781eb081b2256b
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 450px;
-  max-height: 400px;
+.grid {
+
+  margin: 0;
+  display: grid;
+
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho "
+    "apadrinhar apadrinhar apadrinhar"
+    "apadrinhar apadrinhar apadrinhar"
+    "depoimentos depoimentos  depoimentos"
+    "depoimentos depoimentos  depoimentos"
+    "rodape   rodape   rodape"
+    "rodape   rodape   rodape";
+}
+
+
+.cabecalho {
+  grid-area: cabecalho;
+  background-color: #D8EFEF;
+}
+
+.header_superior {
+  display: flex;
+}
+
+
+.imagem__cabecalho {
+  max-width: 200px;
+  max-height: 150px;
   width: auto;
   height: auto;
 }
+
+.links_header_container {
+  justify-content: center;
+  align-items: center;
+  padding: 4em 1em 1em 11em;
+
+}
+
+.links__header {
+  padding: 1em 1em 1em 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--font-preto);
+  font-size: 1.5rem;
+  text-decoration: none;
+
+}
+
 
 .card-container {
   display: flex;
@@ -103,11 +151,52 @@ body {
   transform: translateX(5px);
 }
 
+<<<<<<< HEAD
 /* .footer {
   position: fixed;
+=======
+.footer {
+>>>>>>> 4301fb6b98fe34918e65d2b96d781eb081b2256b
   bottom: 0;
   text-align: center;
   width: 100%;
   background-color: #D8EFEF;
+<<<<<<< HEAD
   padding: 20px;
 } */
+=======
+  padding: 0px;
+  font-size: 15px;
+  color: #606060;
+
+}
+
+.contatoFooter {
+  padding: 15px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.contatoFooter input[type="name"],
+.contatoFooter input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contatoFooter input[type="submit"] {
+  background-color: #80cc83;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contatoFooter input[type="submit"]:hover {
+  background-color: #45a049;
+  /* cor de fundo do botão ao passar o mouse */
+}
+>>>>>>> 4301fb6b98fe34918e65d2b96d781eb081b2256b
