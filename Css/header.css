@@ -1,81 +1,81 @@
 :root {
     --laranja: #F58440;
-    --laranja-claro:#fac3a1;    
+    --laranja-claro: #fac3a1;
     --azul: #0CC1C2;
     --font-preto: #606060;
     --branco: #FFFFFF;
-    --azul-claro:rgba(216, 239, 239,2)
-  
-  }
-  
-.cabecalho{
-    grid-area: cabecalho;
-    background-color: var(--azul-claro);
- 
-  
+    --azul-claro: rgba(216, 239, 239, 2)
 }
 
-.header_superior{
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #D8EFEF;
+    ;
+
+
+}
+
+.header_superior {
     display: flex;
 }
 
 
-.imagem__cabecalho{
-    max-width:200px;
-    max-height:150px;
+.imagem__cabecalho {
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
 
-.links_header_container{
-justify-content: center;
-align-items: center;
-padding: 4em 1em 1em 11em;
+.links_header_container {
+    justify-content: center;
+    align-items: center;
+    padding: 4em 1em 1em 11em;
 
 }
 
-.links__header{
-padding: 1em 1em 1em 1em;
-text-transform: uppercase;
-font-weight: 700;
-color: var(--font-preto);
-font-size: 1.5rem;
-text-decoration: none;
+.links__header {
+    padding: 1em 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--font-preto);
+    font-size: 1.5rem;
+    text-decoration: none;
 
 }
 
-.header_title{
+.header_title {
     color: var(--azul);
     font-weight: bold;
-    font-size:4rem ;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 
-.header_inferior{
+.header_inferior {
     display: flex;
     justify-content: space-between;
 }
 
 
 
-.paragrafo_header_inferior p{
+.paragrafo_header_inferior p {
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--font-preto);
-   margin:  0em 0em 1em 5em;
-    max-width:350px;
-    max-height:250px;
+    margin: 0em 0em 1em 5em;
+    max-width: 350px;
+    max-height: 250px;
     width: auto;
     height: auto;
 }
 
-header button{
+header button {
     background-color: var(--laranja);
-    margin:  0em 0em 0em 10em;
+    margin: 0em 0em 0em 10em;
     border-radius: 10px;
     color: var(--branco);
     width: 250px;
@@ -84,11 +84,11 @@ header button{
 
 }
 
-.imagem_header_inferior img{
-    max-width:780px;
-    max-height:350px;
+.imagem_header_inferior img {
+    max-width: 780px;
+    max-height: 350px;
     width: auto;
     height: 100%;
-   
-   
+
+
 }

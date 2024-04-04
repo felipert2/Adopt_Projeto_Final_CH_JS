@@ -18,7 +18,7 @@ body {
 
 .grid {
 
-    margin: 0 5%;
+    margin: 0;
     display: grid;
 
     grid-template-columns: 1fr 10fr 1fr;
@@ -38,6 +38,7 @@ body {
     grid-area: apadrinhar;
     text-align: center;
     height: 600px;
+    max-width: 100%;
 }
 
 .apadrinhar .tituloApadrinhar {
@@ -49,25 +50,28 @@ body {
 
 .apadrinhar .apandrinhar_doacao {
     display: flex;
-    margin-left: 40%;
-    margin-top: 100px;
-    padding-top: 50px;
+    margin-left: 35%;
+    margin-top: 80px;
+    padding-top: 5px;
     width: 845px;
     height: 307px;
     border: 1px solid #c6c6c6;
     border-radius: 50px;
     box-shadow: 0px 0px 10px 2px #c6c6c6;
     background-color: #fff;
+    padding: 0;
+    max-width: 100%;
 }
 
 .formInfo {
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 .formInfo label {
     display: block;
     color: #F58440;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
 
 }
@@ -96,6 +100,7 @@ body {
     color: #F58440;
     font-size: 15px;
     font-weight: 600;
+    max-width: 100%;
 
 }
 
@@ -125,4 +130,5 @@ body {
     width: 100%;
     background-color: #D8EFEF;
     padding: 0px;
+
 }

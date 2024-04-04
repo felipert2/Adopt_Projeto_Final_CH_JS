@@ -9,6 +9,7 @@
   --branco: #ffffff;
   --azul-claro: rgba(216, 239, 239, 2);
 }
+
 * {
   box-sizing: border-box;
   padding-top: 0px;
@@ -21,17 +22,61 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("*");
+
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 450px;
-  max-height: 400px;
+.grid {
+
+  margin: 0;
+  display: grid;
+
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho "
+    "apadrinhar apadrinhar apadrinhar"
+    "apadrinhar apadrinhar apadrinhar"
+    "depoimentos depoimentos  depoimentos"
+    "depoimentos depoimentos  depoimentos"
+    "rodape   rodape   rodape"
+    "rodape   rodape   rodape";
+}
+
+
+.cabecalho {
+  grid-area: cabecalho;
+  background-color: #D8EFEF;
+}
+
+.header_superior {
+  display: flex;
+}
+
+
+.imagem__cabecalho {
+  max-width: 200px;
+  max-height: 150px;
   width: auto;
   height: auto;
 }
+
+.links_header_container {
+  justify-content: center;
+  align-items: center;
+  padding: 4em 1em 1em 11em;
+
+}
+
+.links__header {
+  padding: 1em 1em 1em 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--font-preto);
+  font-size: 1.5rem;
+  text-decoration: none;
+
+}
+
 
 .card-container {
   display: flex;
