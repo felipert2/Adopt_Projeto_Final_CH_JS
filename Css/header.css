@@ -28,10 +28,11 @@
 }
 
 .links_header_container {
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: end;
     padding: 4em 1em 1em 11em;
-
+    font-size: 16px;
+    /* ALINHAR O HEADER LINKS PARA O LADO DIREITO DA PAGINA */
 }
 
 .links__header {
