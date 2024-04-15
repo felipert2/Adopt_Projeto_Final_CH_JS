@@ -18,11 +18,11 @@ body{
 .grid{
 
     margin: 0 5%;      
-    display: grid;
-  
+    display: grid;  
     grid-template-columns:1fr 10fr 1fr;    
     grid-template-areas:
-    "cabecalho cabecalho cabecalho "    
+    "cabecalho cabecalho cabecalho "  
+    "cabecalho cabecalho cabecalho "   
     "apadrinhar apadrinhar apadrinhar"  
     "apadrinhar apadrinhar apadrinhar"  
     "depoimentos depoimentos  depoimentos"
@@ -40,7 +40,7 @@ body{
 }
 
 .apadrinhar .tituloApadrinhar{
-    margin-top: 50px;
+    margin-top: 1em;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #606060;
