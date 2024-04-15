@@ -18,7 +18,6 @@ body {
 
 .grid {
 
-<<<<<<< HEAD
     margin: 0 5%;      
     display: grid;  
     grid-template-columns:1fr 10fr 1fr;    
@@ -31,23 +30,8 @@ body {
     "depoimentos depoimentos  depoimentos"
     "rodape   rodape   rodape" 
     "rodape   rodape   rodape" ;
-=======
-    margin: 0;
-    display: grid;
 
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-areas:
-        "cabecalho cabecalho cabecalho "
-        "apadrinhar apadrinhar apadrinhar"
-        "apadrinhar apadrinhar apadrinhar"
-        "depoimentos depoimentos  depoimentos"
-        "depoimentos depoimentos  depoimentos"
-        "rodape   rodape   rodape"
-        "rodape   rodape   rodape";
->>>>>>> 9917336d1527f7eaa70929a01efdfdc6c72c84bc
 }
-
-
 
 .apadrinhar {
     grid-area: apadrinhar;
@@ -56,13 +40,12 @@ body {
     max-width: 100%;
 }
 
-<<<<<<< HEAD
+ HEAD
 .apadrinhar .tituloApadrinhar{
     margin-top: 1em;
-=======
+
 .apadrinhar .tituloApadrinhar {
     margin-top: 50px;
->>>>>>> 9917336d1527f7eaa70929a01efdfdc6c72c84bc
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #606060;
