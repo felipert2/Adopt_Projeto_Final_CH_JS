@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0;   
+    padding: 0;
     font-family: "Poppins", sans-serif;
-    
-   
-    
+    /* teste */
+
+
+
 }
 
-body{
+body {
     background-image: url("../Assets/Rectangle10.png");
 }
 
-.grid{
+.grid {
 
+<<<<<<< HEAD
     margin: 0 5%;      
     display: grid;  
     grid-template-columns:1fr 10fr 1fr;    
@@ -29,89 +31,163 @@ body{
     "depoimentos depoimentos  depoimentos"
     "rodape   rodape   rodape" 
     "rodape   rodape   rodape" ;
+=======
+    margin: 0;
+    display: grid;
+
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho "
+        "apadrinhar apadrinhar apadrinhar"
+        "apadrinhar apadrinhar apadrinhar"
+        "depoimentos depoimentos  depoimentos"
+        "depoimentos depoimentos  depoimentos"
+        "rodape   rodape   rodape"
+        "rodape   rodape   rodape";
+>>>>>>> 9917336d1527f7eaa70929a01efdfdc6c72c84bc
 }
 
 
 
-.apadrinhar{
-    grid-area: apadrinhar;    
-    text-align: center;    
-    height: 600px;   
+.apadrinhar {
+    grid-area: apadrinhar;
+    text-align: center;
+    height: 600px;
+    max-width: 100%;
 }
 
+<<<<<<< HEAD
 .apadrinhar .tituloApadrinhar{
     margin-top: 1em;
+=======
+.apadrinhar .tituloApadrinhar {
+    margin-top: 50px;
+>>>>>>> 9917336d1527f7eaa70929a01efdfdc6c72c84bc
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #606060;
 }
 
-.apadrinhar .apandrinhar_doacao{
+.apadrinhar .apandrinhar_doacao {
     display: flex;
-    margin-left: 40%;
-    margin-top: 100px;
-    padding-top: 50px;
+    margin-left: 35%;
+    margin-top: 80px;
+    padding-top: 5px;
     width: 845px;
     height: 307px;
     border: 1px solid #c6c6c6;
     border-radius: 50px;
     box-shadow: 0px 0px 10px 2px #c6c6c6;
     background-color: #fff;
+    padding: 0;
+    max-width: 100%;
 }
 
 .formInfo {
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 .formInfo label {
-    display: block;    
+    display: block;
     color: #F58440;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
-  
+
 }
 
 .formInfo input {
-    background-color: #F6F5F5;    
+    background-color: #F6F5F5;
     color: #606060;
     width: 380px;
     height: 35px;
     border: none;
-    
-    
+
+
 }
 
-.arrecadado{
+.arrecadado {
     grid-area: depoimentos;
-    text-align: center;    
+    text-align: center;
     margin: auto;
-    padding-top: 50px;
-    margin-top: 100px;
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
     background-color: #f5854034;
     width: 640px;
     height: 250px;
     border-radius: 50px;
     box-shadow: 0px 0px 10px 2px #c6c6c6;
-    color: #F58440;
+    color: #f58440;
     font-size: 15px;
-    font-weight: 600;   
-    
+    font-weight: 600;
+    max-width: 100%;
+
 }
 
-.arrecadado div{
+.arrecadado div {
     margin-top: 30px;
     color: #606060;
     font-size: 30px;
     font-weight: 600;
 }
 
-.arrecadado p{
-    font-size: 15px;
+.arrecadado p {
+    font-size: 20px;
     font-weight: 100;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 
-.arrecadado h3{ 
+.arrecadado h2 {
+    font-size: 24px;
+}
+
+.arrecadado h3 {
     color: #606060;
+    font-size: 20px;
+}
+
+
+
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #D8EFEF;
+    padding: 0px;
+    font-size: 15px;
+    color: #606060;
+
+}
+
+.contatoFooter {
+    padding: 15px;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.contatoFooter input[type="name"],
+.contatoFooter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contatoFooter input[type="submit"] {
+    background-color: #80cc83;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contatoFooter input[type="submit"]:hover {
+    background-color: #45a049;
+    /* cor de fundo do botão ao passar o mouse */
 }

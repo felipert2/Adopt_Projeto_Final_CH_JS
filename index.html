@@ -19,11 +19,9 @@
           </a><!--logo-->
         </div>
         <div class="links_header_container">
-          <a class="links__header" href="*">Home</a>
-          <a class="links__header" href="*">Instituições</a>
-          <a class="links__header" href="*">Apadrinhar</a>
-          <a class="links__header" href="*">Sobre</a>
-          <a class="links__header" href="*">Cadastro</a>
+          <a class="links__header" href="./index.html">Home</a>
+          <a class="links__header" href="./Pages/Instituições/intituicoes.html">Instituições</a>
+          <a class="links__header" href="./Pages/Apadrinhar/apadrinhar.html">Apadrinhar</a>
         </div>
       </div>
       <h1 class="header_title">sua ajuda faz a diferença</h1>
@@ -56,17 +54,21 @@
     <section class="apadrinhar">
       <h2 class="tituloApadrinhar">COMO VOCÊ PODE AJUDAR</h2>
       <div class="apandrinhar_doacao">
-        <div class="formInfo">          
-            <label for="inputNome"> Nome no cartão</label>
-            <input type="name" id="" name="inputNome">
-            <label for="inputNumero"> Número no cartão</label>
-            <input type="number" id="" name="inputNumero">          
+        <div class="formInfo">
+          <label for="inputNome">Nome no cartão</label>
+          <input type="name" id="" name="inputNome">
+          <label for="inputNumero">Número no cartão</label>
+          <input type="text" id="" name="inputNumero" placeholder="0000 0000 0000 0000">
+          <label for="inputData">Data de vencimento</label>
+          <input type="text" id="" name="inputData" placeholder="MM/AA">
+          <label for="inputCVC">CVC</label>
+          <input type="text" id="" name="inputCVC" placeholder="XXX">
         </div>
 
 
         <div>
           <form>
-            <label for="inputValor"> Você está doando:</label>
+            <label for="inputValor">Você está doando:</label>
             <input type="number" id="inputValor" name="inputValor">
             <button type="button" id="btnSomar">DOAR</button>
           </form>
@@ -77,19 +79,40 @@
     <section class="arrecadado">
       <h2>COM A SUA AJUDA JÁ FOI ARRECADADO:</h2>
       <div id="resultado"></div>
-      <p>Apoiadores</p>
-      <h3>125 pessoas</h3>
-      
+      <br>
+      <p>apoiadores</p>
+      <!--aqui temos que colocar a contabilização de pessoas que já doaram depois-->
+      <div id="resultadoPessoas"></div>
+      <h3>00 pessoas</h3>
+
     </section>
 
-    
+
     <section class="depoimentos">
-        <h1>Histórias Felizes</h1>
+      <h1>Histórias Felizes</h1>
     </section>
-
-    <footer class="rodape"></footer>
   </div>
   <!-- Final Grid -->
+  <br>
+  <footer class="footer">
+    <div class="contatoFooter">
+      <h3>contato</h3>
+      <label for="inputNome"></label>
+      <input type="name" id="" name="inputNome" placeholder="nome" /> <br />
+      <label for="inputEmail"></label>
+      <input type="text" id="" name="inputNumero" placeholder="e-mail" />
+      <br />
+      <label for="inputMensagem"></label>
+      <input type="text" id="" name="inputData" placeholder="mensagem" />
+      <br />
+      <input type="submit" value="enviar" /> <br />
+      <br>
+      Desenvolvido pelo grupo 05 da turma 54745 do curso de Javascript da
+      CoderHouse Brasil.
+    </div>
+  </footer>
+
+
 
   <script src="./Scripts/index.js"></script>
 </body>
