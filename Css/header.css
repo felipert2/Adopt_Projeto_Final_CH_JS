@@ -9,14 +9,16 @@
 
 .cabecalho {
     grid-area: cabecalho;
-    background-color: #D8EFEF;
-    ;
+    background-color: var(--azul-claro);
+    color: var(--font-preto);
 
 
 }
 
 .header_superior {
     display: flex;
+    justify-content: space-between;
+    margin-right: 5em;
 }
 
 
@@ -27,9 +29,7 @@
     height: auto;
 }
 
-.links_header_container {
-    justify-content: right;
-    align-items: end;
+.links_header_container {  
     padding: 4em 1em 1em 11em;
     font-size: 16px;
     /* ALINHAR O HEADER LINKS PARA O LADO DIREITO DA PAGINA */
@@ -82,6 +82,7 @@ header button {
     width: 250px;
     padding: 0.6sem 0;
     border-color: var(--laranja);
+    box-shadow: none;
 
 }
 

@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+:root {
+    --laranja: #F58440;
+    --laranja-claro: #fac3a1;
+    --azul: #0CC1C2;
+    --font-preto: #606060;
+    --branco: #FFFFFF;
+    --azul-claro: rgba(216, 239, 239, 2)
+}
+
 *{
     margin: 0;
     padding: 0;   
@@ -18,8 +28,7 @@ body{
 .grid{
 
     margin: 0 5%;      
-    display: grid;
-  
+    display: grid;  
     grid-template-columns:1fr 10fr 1fr;    
     grid-template-areas:
     "cabecalho cabecalho cabecalho "    
@@ -34,6 +43,13 @@ body{
 
 
 .apadrinhar{
-    grid-area: apadrinhar;
-   
+    grid-area: apadrinhar;   
+}
+
+
+.titulo_apadrinhar{
+font-size: 36px;
+color: var(--font-preto);
+text-align: center;
+margin: 1em;
 }
