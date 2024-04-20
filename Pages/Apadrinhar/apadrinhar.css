@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;  
+    
+}
+.cabecalho {    
+    background-color: #d8efef;
+    position: relative;
+  }
+  
+  .header_superior {
+    display: flex;
+    justify-content: space-between;
+  }  
+  
+  .links_header_container {
+    margin-right: 50px;
+    margin-top: 80px;   
+  }
+  
+  .links__header {
+    padding: 1em 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #606060;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  
+
+  .title_principal {
+    text-align: center;    
+    font-size: 60px;
+    color:  #0cc1c2;
+  }
+
+  .title_Secundario{
+    display: flex;   
+    
+   
+   }
+
+   .title_h3{
+    width: 455px;
+    height: 250px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #606060;
+    font-family: 'Roboto';
+    font-size: 24px; } 
+
+    .title_img1{
+        margin-left: 70%;
+        margin-top: 20px;
+        position: absolute;
+    }
+
+    .title_img2{
+        margin-left: 70%;
+        margin-top: 40px;
+        position: absolute;
+    }
+
+.title_Conheca{
+    color: #606060;
+    align-items: center;
+    text-align: center;
+    }
+
+    .title_conheca_h2{
+        font-size: 36px;
+        font-weight: 800;
+        margin-top: 50px;
+        }
+
+    .title_conheca_h3{
+        font-size: 24px;
+        font-family: 'roboto';
+        margin-left: 200px ;
+        margin-right: 200px;
+        margin-top: 50px;       
+        }    
+
+
+.cachorros h1 {
+    color: #0cc1c2;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+
+}        
+
+.cachorros_cards{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    }
+
+    .card_apadrinhar{
+        width: 300px;
+        height: 450px;
+        background-color: #f3f3f3;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+        
+    }
+
+    .card_apadrinhar img {
+       margin-top: -10px;  
+        
+    }
+    
+    .card_apadrinhar h5 {
+        font-size: 30px;
+        color: #606060;
+        font-weight: 200;
+    }
+
+    .card_apadrinhar h6 {
+        font-size: 20px;
+        color: #6060608a;
+        font-weight: 200;
+    }
+
+    .card_apadrinhar button {
+        background-color: #0cc1c2;
+        color: #f3f3f3;
+        width: 172px;
+        height: 50px;
+        border-radius: 30px;
+        border-style: none;
+        font-size: 20px;
+        margin-top: 10px;
+    }
