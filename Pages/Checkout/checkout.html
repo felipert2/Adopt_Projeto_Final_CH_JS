@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="header_superior">
+        <div class="imagem__cabecalho">
+            <a href="../../index.html">
+            <img class="logo" src="../../Assets/logo 1.png" alt="logo Petscript" />
+            </a>
+        </div>
+        <div class="links_header_container">
+            <a class="links__header" href="../../index.html">Home</a>
+            <a class="links__header" href="../Instituições/intituicoes.html">Instituições</a>
+            <a class="links__header" href="../Apadrinhar/apadrinhar.html">Apadrinhar</a>
+        </div>
+        </div>  
+    </header>
+
+    <section class="container">
+        <div class="img"><img src="../../Assets/cachorro6.png" alt=""></div>
+        <div class="card_Pagamento">
+            <h3>Quanto você quer doar?</h3>
+            <input class="input_valor" type="text">
+
+            <h5>Selecione a forma de pagamento</h5>
+            <span class="mudaCor">DEBITO</span> <span class="mudaCor"> CRÉDITO</span> <span class="mudaCor">PIX</span>
+
+            <form class="formulario">
+                <label for="nome">Nome no Cartão</label> <br>
+                <input type="number"><br>
+                <label for="nome">Número no Cartão</label><br>
+                <input type="number"><br>
+                <label for="date">Data de <br> vencimento</label>
+                <input type="date" style="width: 250px;">
+                <label for="cvc">CVC</label>
+                <input type="number" style="width: 100px;">
+            </form>
+            <BUtton>CONCLUIR O PAGAMENTO</BUtton>
+        </div>
+
+
+
+    </section>
+    <script src="checkout.js"></script>
+</body>
+</html>
