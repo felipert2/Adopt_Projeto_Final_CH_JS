@@ -27,7 +27,7 @@ body{
 
 .grid{
 
-    margin: 0 5%;      
+    margin: 0 0%;      
     display: grid;  
     grid-template-columns:1fr 10fr 1fr;    
     grid-template-areas:
@@ -52,4 +52,58 @@ font-size: 36px;
 color: var(--font-preto);
 text-align: center;
 margin: 1em;
+}
+
+
+.container_card_doacao_apadrinhar{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card_apadrinhar{
+
+    background-color: var(--branco);
+	border-radius: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 1em;
+	margin: 1 ;
+	width: 10em;
+    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.card_apadrinhar h3{
+text-transform: uppercase;
+margin: 1em;
+color: var(--laranja);
+}
+
+
+.container_dados_cartao{
+
+}
+
+.container_card_dados_cartao{
+background-color: var(--branco);
+	border-radius: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 2em;
+	margin: 1 ;
+	width: 10em;
+    height: 307;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.posicionamento_dados_cartao{
+    display: flex;
 }
