@@ -9,6 +9,9 @@
     font-size: 16px;  
     
 }
+body{
+    background-image: url("../../Assets/Rectangle10.png");
+}
 .cabecalho {    
     background-color: #d8efef;
     position: relative;
@@ -33,7 +36,10 @@
     text-decoration: none;
   }
 
-  
+  .title{
+    width: 1500px;
+    margin: auto;
+  }
 
   .title_principal {
     text-align: center;    
@@ -99,10 +105,14 @@
 }        
 
 .cachorros_cards{
+    
+    width:1000px;
+    height: 600px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
-    margin-top: 50px;
+    margin:auto
     }
 
     .card_apadrinhar{
@@ -143,3 +153,32 @@
         font-size: 20px;
         margin-top: 10px;
     }
+
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        transform: translateY(-50%);
+        width: auto;
+        padding: 16px;       
+        color: rgb(202, 15, 15);
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        
+      }
+      
+      .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+        background-color: #d9d7d7;
+      }
+      
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
