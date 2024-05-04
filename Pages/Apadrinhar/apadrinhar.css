@@ -155,30 +155,149 @@ body{
     }
 
 
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        transform: translateY(-50%);
-        width: auto;
-        padding: 16px;       
-        color: rgb(202, 15, 15);
-        font-weight: bold;
-        font-size: 30px;
-        transition: 0.6s ease;
+    
+      
+      
+
+
+.cachorros{  
+  text-align: center;
+
+}
+
+      .petsSlider{
         
-      }
+        border: 1px black solid;
+        height: 550px;
+        width: 800px;
+        margin: auto;
+        
+        
+
+        
+    }
+
+    
+  .containerGato {
+    border: 3px black solid;
+    height: 550px;
+    width: 800px;
+    margin: auto;
+    
+    
+    
+}
+
+    .sliderApadrinhar {
+    display: flex;
+    gap: 100px;
+    width: 300px; /* Largura para mostrar 2 produtos por vez */
+    transition: transform 0.5s ease;
+    position: absolute;
+    
+    
+    
+  }
+  
+  .pets {
+    
+    flex: 0 0 100%;  
+    padding: 10px;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    background-color:#f3f3f3;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);   
+  }
+  .pets img {
+      height: 300px;}
+  .pets h4{    
+      font-size: 30px;
+      color: #606060;
+      font-weight: 200;}
+
+  .pets h3{    
+      font-size: 20px;
+      color:  #6060608a;
+      font-weight: 200;}
+
+  .pets p{    
+      font-size: 20px;
+      color:  #6060608a;
+      font-weight: 200;
+      margin-bottom: 30px;}
+    
+  .pets a{
       
-      .prev {
-        left: 0;
-        border-radius: 3px 0 0 3px;
-        background-color: #d9d7d7;
-      }
+      background-color: #0cc1c2;
+      color: #f3f3f3;      
+      border-radius: 30px;        
+      font-size: 20px;
+      padding: 10px;        
+      text-decoration: none;
+  }  
+
+  .petsGato {
+    
+    flex: 0 0 100%;  
+    padding: 10px;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    background-color:#f3f3f3;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);   
+  }
+  .petsGato img {
+      height: 300px;}
+  .petsGato h4{    
+      font-size: 30px;
+      color: #606060;
+      font-weight: 200;}
+
+  .petsGato h3{    
+      font-size: 20px;
+      color:  #6060608a;
+      font-weight: 200;}
+
+  .petsGato p{    
+      font-size: 20px;
+      color:  #6060608a;
+      font-weight: 200;
+      margin-bottom: 30px;}
+    
+  .petsGato a{
       
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      
-      .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
+      background-color: #0cc1c2;
+      color: #f3f3f3;      
+      border-radius: 30px;        
+      font-size: 20px;
+      padding: 10px;        
+      text-decoration: none;
+  }
+  .prevBtn, .nextBtn, .prevBtn2, .nextBtn2{      
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    gap: 100px;   
+  }
+
+  .prevBtn{
+    margin-left: -200px;
+    margin-top: 250px;    
+  }
+
+  .nextBtn{
+    margin-left: 900px;
+    margin-top: 250px;  
+
+  }
+
+ 
+ 
