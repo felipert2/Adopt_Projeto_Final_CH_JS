@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Jorge", idade: "2 anos", image: "../../Assets/jorge.png", porte:"Porte Médio, SRD" },
         { name: "Abigail", idade: "1 ano", image: "../../Assets/cachorro4.png", porte:"Porte Pequeno, SRD" },
         { name: "Luna", idade: "4 anos", image: "../../Assets/cachorro5.png", porte:"Porte Médio, SRD" },
-        { name: "Madá", idade: "3 anos", image: "../../Assets/ronaldo.png", porte:"Porte Médio, SRD" },
+        { name: "Madá", idade: "3 anos", image: "../../Assets/cachorro7.png", porte:"Porte Médio, SRD" },
     ];
 
     var productsData2 = [
-        { name: "Gato", idade: "3 anos", image: "../../Assets/gato1.png", porte:"Porte Pequeno, SRD" },
-        { name: "Patinho", idade: "1 ano", image: "../../Assets/gato2.png", porte:"Porte Pequeno, SRD"},
-        { name: "Coelho", idade: "2 anos", image: "../../Assets/gato3.png", porte:"Porte Médio, SRD" },
-        { name: "Hamster", idade: "1 ano", image: "../../Assets/gato4.png", porte:"Porte Pequeno, SRD" },
-        { name: "Hamster", idade: "1 ano", image: "../../Assets/gato4.png", porte:"Porte Pequeno, SRD" },
-        { name: "Hamster", idade: "1 ano", image: "../../Assets/gato4.png", porte:"Porte Pequeno, SRD" },
+        { name: "Whiskers", idade: "3 anos", image: "../../Assets/gato1.png", porte:"Porte Pequeno, SRD" },
+        { name: "Simba", idade: "1 ano", image: "../../Assets/gato2.png", porte:"Porte Pequeno, SRD"},
+        { name: "Bella", idade: "2 anos", image: "../../Assets/gato3.png", porte:"Porte Médio, SRD" },
+        { name: "Oliver", idade: "1 ano", image: "../../Assets/gato4.png", porte:"Porte Pequeno, SRD" },
+        { name: "Chloe", idade: "1 ano", image: "../../Assets/gato5.png", porte:"Porte Pequeno, SRD" },
+        { name: "Nala", idade: "4 Meses", image: "../../Assets/gato6.png", porte:"Porte Pequeno, SRD" },
     ];
 
     var sliderApadrinhar = document.getElementsByClassName('sliderApadrinhar')[0];
@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var ajudar = document.createElement('a');
         ajudar.textContent = "Quero Ajudar";
         ajudar.href = "#"
+        ajudar.addEventListener('click', function() {
+            modal.style.display = "block";
+        });
+
 
         // Adicionar os elementos do produto ao elemento pai
         productDiv.appendChild(productImage);
@@ -81,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var ajudar = document.createElement('a');
         ajudar.textContent = "Quero Ajudar";
         ajudar.href = "#"
+        ajudar.addEventListener('click', function() {
+            modal.style.display = "block";
+        });
 
         // Adicionar os elementos do produto ao elemento pai
         productDiv.appendChild(productImage);
@@ -135,4 +142,18 @@ document.addEventListener("DOMContentLoaded", function() {
     prevBtn2.addEventListener('click', function() {
         moveCollectiveProducts2('prev');
     });
+
+    // Referenciar o modal
+    var modal = document.getElementById("myModal");
+
+    // Quando o usuário clicar no botão de fechar, ocultar o modal
+    modal.querySelector(".close").addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Também podemos fechar o modal se o usuário clicar fora dele
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";}
+           });
 });

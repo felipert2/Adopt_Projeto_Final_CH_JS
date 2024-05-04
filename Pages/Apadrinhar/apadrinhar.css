@@ -8,13 +8,25 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;  
     
+    
 }
 body{
     background-image: url("../../Assets/Rectangle10.png");
+    
+    height: 3000px;
+    width: 2000px;
+    overflow-x: hidden;
+    
+    
+    
+    
 }
 .cabecalho {    
     background-color: #d8efef;
     position: relative;
+    max-width: 3000px;
+    min-width: 1600px;
+    
   }
   
   .header_superior {
@@ -64,13 +76,13 @@ body{
     font-size: 24px; } 
 
     .title_img1{
-        margin-left: 70%;
+        margin-left: 50%;
         margin-top: 20px;
         position: absolute;
     }
 
     .title_img2{
-        margin-left: 70%;
+        margin-left: 50%;
         margin-top: 40px;
         position: absolute;
     }
@@ -102,7 +114,16 @@ body{
     text-align: center;
     margin-top: 50px;
 
-}        
+}      
+
+.Gatos h1{
+text-align: center;
+font-size: 60px;
+color: #0cc1c2;
+margin-top: 50px;
+
+}
+    
 
 .cachorros_cards{
     
@@ -162,16 +183,17 @@ body{
 
 .cachorros{  
   text-align: center;
+  
 
 }
 
       .petsSlider{
         
-        border: 1px black solid;
+        
         height: 550px;
         width: 800px;
         margin: auto;
-        
+        overflow-x: hidden;   
         
 
         
@@ -179,10 +201,11 @@ body{
 
     
   .containerGato {
-    border: 3px black solid;
+    
     height: 550px;
     width: 800px;
     margin: auto;
+    
     
     
     
@@ -190,10 +213,13 @@ body{
 
     .sliderApadrinhar {
     display: flex;
-    gap: 100px;
-    width: 300px; /* Largura para mostrar 2 produtos por vez */
+    gap: 70px;
+    width: 800px; /* Largura para mostrar 2 produtos por vez */
     transition: transform 0.5s ease;
     position: absolute;
+    
+    
+    
     
     
     
@@ -201,14 +227,16 @@ body{
   
   .pets {
     
-    flex: 0 0 100%;  
+    flex: 0 0 40%;  
     padding: 10px;
     height: 500px;
     width: 300px;
     text-align: center;
     background-color:#f3f3f3;
     border-radius: 30px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);   
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
+    overflow-x: hidden;
+    
   }
   .pets img {
       height: 300px;}
@@ -240,7 +268,7 @@ body{
 
   .petsGato {
     
-    flex: 0 0 100%;  
+    flex: 0 0 40%;  
     padding: 10px;
     height: 500px;
     width: 300px;
@@ -279,7 +307,7 @@ body{
   .prevBtn, .nextBtn, .prevBtn2, .nextBtn2{      
     width: 100px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #0cc1c2;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -289,15 +317,67 @@ body{
   }
 
   .prevBtn{
-    margin-left: -200px;
-    margin-top: 250px;    
+    margin-left: 00px;
+    margin-top: 0px;    
   }
 
   .nextBtn{
-    margin-left: 900px;
-    margin-top: 250px;  
+    margin-left: 1000px;
+    margin-top: 0px;  
+    margin-bottom: 20px;
+    position: relative;
 
   }
+.prevBtn2{
+    margin-left: 450px;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    position: relative;
 
+  }
+  .nextBtn2{
+    margin-left: 900px;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    position: relative;
+
+  }
+  
  
- 
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Fundo escuro */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  
+}
+
+.modal-content p{
+  font-size: 28px;
+  font-weight: 600;
+  color: #0cc1c2;
+  margin: 20px;
+
+
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
