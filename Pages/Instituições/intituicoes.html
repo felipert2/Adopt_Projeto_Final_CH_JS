@@ -29,21 +29,17 @@
     </h1>
   </header>
 
-  <!-- <div class="ordenacao-container">
-    <label for="ordenacao">Ordenar por:</label>
-    <select id="ordenacao">
-      <option value="titulo">Título</option>
-    </select>
-  </div> -->
   <select id="ordenacao">
     <option value="asc">Ordenar</option>
     <option value="asc">A - Z</option>
     <option value="desc">Z - A</option>
+    <option value="estado">Por Estado</option>
 </select>
 
   <section class="card-container">
-    <div class="card">
-      <span class="title"> Cão sem Dono </span>
+    <div class="card"  data-estado="sao-paulo">
+      <span class="title"> Cão sem Dono <br> São Paulo  </span>
+      
       <div>
         <img class="image" src="../../Assets/cao-sem-dono.png" alt="ong cão sem dono" />
       </div>
@@ -54,6 +50,7 @@
           e integrá-lo a famílias que estejam dispostas a dar amor e carinho.
           Amigos e voluntários dispostos a dar uma vida digna aos animais.
         </p>
+        
 
       </div>
       <a class="action" href="https://www.caosemdono.com.br/" target="_blank">
@@ -62,8 +59,8 @@
       </a>
     </div>
 
-    <div class="card">
-      <span class="title"> Anjos do Poço </span>
+    <div class="card"  data-estado="pernambuco">
+      <span class="title"> Anjos do Poço <br>Pernambuco</span>
       <div>
         <img class="image" src="../../Assets/anjos_do_poco.png" alt="Anjos do Poço" />
       </div>
@@ -80,8 +77,8 @@
         </a>
       </div>
     </div>
-    <div class="card">
-      <span class="title"> SUIPA </span>
+    <div class="card"data-estado="rio-de-janeiro">
+      <span class="title"> SUIPA <br>Rio de Janeiro</span>
       <div>
         <img class="image" src="../../Assets/suipa.png" alt="SUIPA" />
       </div>
@@ -98,8 +95,8 @@
         </a>
       </div>
     </div>
-    <div class="card">
-      <span class="title"> Cão sem Fome </span>
+    <div class="card" data-estado="sao-paulo">
+      <span class="title"> Cão sem Fome <br>São Paulo </span>
       <div>
         <img class="image" src="../../Assets/projeto-cao-sem-fome-logo.jpg" alt="Cão sem Fome" />
       </div>
@@ -116,8 +113,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <span class="title"> Associação Quatro Patinhas </span>
+    <div class="card" data-estado="rio-de-janeiro">
+      <span class="title"> Associação Quatro Patinhas <br>Rio de Janeiro</span>
       <div>
         <img class="image" src="../../Assets/quatro-patinhas.png" alt="Associação Quatro Patinhas" />
       </div>
@@ -134,8 +131,8 @@
         </a>
       </div>
     </div>
-    <div class="card">
-      <span class="title"> Gatópoles </span>
+    <div class="card" data-estado="sao-paulo">
+      <span class="title"> Gatópoles <br>São Paulo</span>
       <div>
         <img class="image" src="../../Assets/gatopoles.png" alt="Gatópoles" />
       </div>
@@ -152,8 +149,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <span class="title"> Associação Amigos dos Animais de Nova Odessa - AAANO </span>
+    <div class="card" data-estado="sao-paulo">
+      <span class="title"> Associação Amigos dos Animais de Nova Odessa - AAANO <br>São Paulo </span>
       <div>
         <img class="image" src="../../Assets/aaano.png" alt="Associação Amigos dos Animais de Nova Odessa" />
       </div>
@@ -171,8 +168,8 @@
         </a>
       </div>
     </div>
-    <div class="card">
-      <span class="title"> Instituto Caramelo </span>
+    <div class="card" data-estado="sao-paulo">
+      <span class="title"> Instituto Caramelo <br>São Paulo</span>
       <div>
         <img class="image" src="../../Assets/caramelo.jpg" alt="Instituto Caramelo" />
       </div>
