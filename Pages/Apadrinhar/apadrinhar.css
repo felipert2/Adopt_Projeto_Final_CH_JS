@@ -12,21 +12,13 @@
 }
 body{
     background-image: url("../../Assets/Rectangle10.png");
-    
-    height: 3000px;
-    width: 2000px;
     overflow-x: hidden;
-    
-    
-    
-    
 }
 .cabecalho {    
     background-color: #d8efef;
     position: relative;
-    max-width: 3000px;
-    min-width: 1600px;
-    
+    max-width: 100%;
+    min-width: auto;
   }
   
   .header_superior {
