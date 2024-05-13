@@ -18,17 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     var sliderApadrinhar = document.getElementsByClassName('sliderApadrinhar')[0];
-    var sliderApadrinhar2 = document.getElementsByClassName('sliderApadrinhar')[1]; // Adicione a classe 'sliderApadrinhar' ao segundo slider no HTML
+    var sliderApadrinhar2 = document.getElementsByClassName('sliderApadrinhar')[1]; 
     var prevBtn = document.getElementsByClassName('prevBtn')[0];
     var nextBtn = document.getElementsByClassName('nextBtn')[0];
-    var prevBtn2 = document.getElementsByClassName('prevBtn2')[0]; // Adicione a classe 'prevBtn' ao botão de anterior do segundo slider no HTML
-    var nextBtn2 = document.getElementsByClassName('nextBtn2')[0]; // Adicione a classe 'nextBtn' ao botão de próximo do segundo slider no HTML
-    var productWidth = sliderApadrinhar.offsetWidth / 2; // Largura de cada produto
+    var prevBtn2 = document.getElementsByClassName('prevBtn2')[0]; 
+    var nextBtn2 = document.getElementsByClassName('nextBtn2')[0]; 
+    var productWidth = sliderApadrinhar.offsetWidth / 2; 
     var currentPosition = 0;
 
-    // Iterar sobre os dados dos produtos e criar elementos HTML para cada um (para o primeiro slider)
     productsData.forEach(function(pets) {
-        // Criar elementos HTML para o produto
         var productDiv = document.createElement('div');
         productDiv.classList.add('pets');
 
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
 
-        // Adicionar os elementos do produto ao elemento pai
         productDiv.appendChild(productImage);
         productDiv.appendChild(productName);
         productDiv.appendChild(productidade);
@@ -63,9 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderApadrinhar.appendChild(productDiv);
     });
 
-    // Iterar sobre os dados dos produtos e criar elementos HTML para cada um (para o segundo slider)
     productsData2.forEach(function(pets) {
-        // Criar elementos HTML para o produto
         var productDiv = document.createElement('div');
         productDiv.classList.add('petsGato');
 
@@ -89,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "block";
         });
 
-        // Adicionar os elementos do produto ao elemento pai
         productDiv.appendChild(productImage);
         productDiv.appendChild(productName);
         productDiv.appendChild(productidade);
@@ -99,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderApadrinhar2.appendChild(productDiv);
     });
 
-    // Função para mover os produtos para a esquerda ou direita (para o primeiro slider)
     function moveCollectiveProducts(direction) {
         var sliderWidth = sliderApadrinhar.offsetWidth;
         var totalWidth = sliderApadrinhar.scrollWidth;
@@ -111,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderApadrinhar.style.transform = 'translateX(' + (-currentPosition) + 'px)';
     }
 
-    // Função para mover os produtos para a esquerda ou direita (para o segundo slider)
     function moveCollectiveProducts2(direction) {
         var sliderWidth = sliderApadrinhar2.offsetWidth;
         var totalWidth = sliderApadrinhar2.scrollWidth;
@@ -123,35 +115,28 @@ document.addEventListener("DOMContentLoaded", function() {
         sliderApadrinhar2.style.transform = 'translateX(' + (-currentPosition) + 'px)';
     }
 
-    // Adiciona event listener para o botão de próximo (para o primeiro slider)
     nextBtn.addEventListener('click', function() {
         moveCollectiveProducts('next');
     });
 
-    // Adiciona event listener para o botão de anterior (para o primeiro slider)
     prevBtn.addEventListener('click', function() {
         moveCollectiveProducts('prev');
     });
 
-    // Adiciona event listener para o botão de próximo (para o segundo slider)
     nextBtn2.addEventListener('click', function() {
         moveCollectiveProducts2('next');
     });
 
-    // Adiciona event listener para o botão de anterior (para o segundo slider)
     prevBtn2.addEventListener('click', function() {
         moveCollectiveProducts2('prev');
     });
 
-    // Referenciar o modal
     var modal = document.getElementById("myModal");
 
-    // Quando o usuário clicar no botão de fechar, ocultar o modal
     modal.querySelector(".close").addEventListener("click", function() {
         modal.style.display = "none";
     });
 
-    // Também podemos fechar o modal se o usuário clicar fora dele
     window.addEventListener("click", function(event) {
         if (event.target == modal) {
             modal.style.display = "none";}

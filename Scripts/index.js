@@ -1,60 +1,65 @@
-let total = 0;
+let totalArrecadado = 0;
 
-// Função para validar o valor inserido
-function validarValor(valor) {
-    return !isNaN(valor); // Retorna true se o valor for numérico, false caso contrário
-}
-
-// Função para atualizar o total
 function atualizarTotal(valor) {
-    total += valor; // Soma o valor ao total
-    document.getElementById("resultado").innerText = "R$" + total; // Atualiza o elemento HTML com o novo total
+    totalArrecadado += valor;
+    document.getElementById('totalArrecadado').innerText = "R$ " + totalArrecadado.toFixed(2);
 }
 
-document.getElementById("btnSomar").addEventListener("click", function () {
-    // Desestruturação para extrair diretamente o valor do campo de entrada
-    const { value } = document.getElementById("inputValor");
+function validarCampos() {
+    const nome = document.getElementById('nome').value.trim();
+    const cidade = document.getElementById('cidade').value.trim();
+    let camposValidos = true;
 
-    // Converte o valor para número
-    const valor = parseFloat(value);
-
-    // Valida o valor inserido
-    if (validarValor(valor)) {
-        // Se o valor for válido, atualiza o total
-        atualizarTotal(valor);
+    if (nome === '') {
+        document.getElementById('erro-nome').style.display = 'block';
+        camposValidos = false;
     } else {
-        // Se o valor não for válido, mostra um alerta
-        alert("Por favor, insira um valor numérico válido.");
+        document.getElementById('erro-nome').style.display = 'none';
     }
 
-    // Limpa o campo de entrada
-    document.getElementById("inputValor").value = "";
+    if (cidade === '') {
+        document.getElementById('erro-cidade').style.display = 'block';
+        camposValidos = false;
+    } else {
+        document.getElementById('erro-cidade').style.display = 'none';
+    }
+
+    return camposValidos;
+}
+
+document.querySelectorAll('.botao_doacao').forEach(button => {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.botao_doacao').forEach(btn => {
+            btn.classList.remove('selecionado');
+        });
+        this.classList.add('selecionado');
+    });
 });
 
-// Função para inicializar o total quando o site é carregado
-function inicializarTotal() {
-    // Verifica se há um valor de total armazenado no localStorage
-    const storedTotal = localStorage.getItem("total");
-    if (storedTotal !== null) {
-        total = parseFloat(storedTotal);
-        document.getElementById("resultado").innerText = "R$" + total;
+
+document.getElementById('btnDoar').addEventListener('click', function() {
+    if (validarCampos()) {
+        const botaoSelecionado = document.querySelector('.botao_doacao.selecionado');
+        if (botaoSelecionado !== null) {
+            const valor = parseFloat(botaoSelecionado.dataset.valor);
+            atualizarTotal(valor);
+            document.getElementById('nome').value = '';
+            document.getElementById('cidade').value = '';
+            document.getElementById('erro-nome').style.display = 'none';
+            document.getElementById('erro-cidade').style.display = 'none';
+            document.getElementById('erro-total').style.display = 'none';
+        } else {
+            document.getElementById('erro-total').style.display = 'block';
+        }
+    } else {
+        document.getElementById('erro-total').style.display = 'block';
     }
-}
-
-// Função para validar o valor inserido
-function validarValor(valor) {
-    return !isNaN(valor); // Retorna true se o valor for numérico, false caso contrário
-}
-
-// Função para atualizar o total
-function atualizarTotal(valor) {
-    total += valor; // Soma o valor ao total
-    document.getElementById("resultado").innerText = "R$" + total; // Atualiza o elemento HTML com o novo total
-
-    // Armazena o novo total no localStorage
-    localStorage.setItem("total", total.toString());
-}
+});
 
 document.addEventListener("DOMContentLoaded", function () {
-    inicializarTotal(); // Chama a função para inicializar o total quando o site é carregado
+    const storedTotal = localStorage.getItem("totalArrecadado");
+    if (storedTotal !== null) {
+        totalArrecadado = parseFloat(storedTotal);
+        document.getElementById("totalArrecadado").innerText = "R$ " + totalArrecadado.toFixed(2);
+    }
 });
